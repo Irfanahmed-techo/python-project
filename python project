@@ -1,0 +1,18 @@
+user_input=list(input("Enter here:- ").split(" "))
+print(user_input)
+Output=""
+for i in user_input:
+ # Take the first letter of string.
+ u=i[0]
+ # Convert the letter to upper case.
+ u=u.upper()
+ # Add the letter to the string.
+ Output=Output+" "+u+","
+print(Output)
+output=""
+for i in user_input:
+ # Take the rest of letters and with first letter space seperated.
+ f=i[1]+ " " + i[2:]+","
+ # Add the letter to the string.
+ output=output+" "+f
+print(output)
